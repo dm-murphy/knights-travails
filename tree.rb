@@ -12,8 +12,6 @@ class Tree
   end
 
   def build_tree(queue = [@start])
-    return if queue.empty?
-
     current = queue.last
     return depth(current) if current.coord == @finish
 
